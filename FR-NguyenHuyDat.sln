@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic CSharp", "Basic CSharp", "{1638A1D3-6D7F-4C58-95FD-29C15273F0A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic OOP", "Basic OOP", "{149C6B5F-8C62-4417-81D1-D821EA79E29B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Advance CSharp", "Advance CSharp", "{1242836B-5F50-4CE8-82A9-4C7E946CD3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4B9CA18-FC1E-4129-BDF9-A0BBA0CDB044} = {1638A1D3-6D7F-4C58-95FD-29C15273F0A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {718A1050-12EF-4684-954B-BB049D07B3E4}
+	EndGlobalSection
+EndGlobal
