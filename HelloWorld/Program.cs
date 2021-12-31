@@ -9,8 +9,8 @@ namespace HelloWorld
             string name;
             Console.Write("Input name : ");
             name = Console.ReadLine();
-            Console.WriteLine($"Hello {name}");
-            Console.WriteLine("Welcome to NTQ !!");
+            Console.WriteLine($"Hello {name} !");
+            Console.WriteLine("Welcome to NTQ Solution");
         }
     }
 }
