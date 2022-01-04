@@ -4,15 +4,15 @@ namespace Struct
 {
     public struct Rectangle
     {
-        public double Width;
-        public double Height;
+        public double width;
+        public double height;
 
         public static void Input(out Rectangle re)
         {
             Console.Write("Height :");
-            re.Height = Double.Parse(Console.ReadLine());
+            re.height = Double.Parse(Console.ReadLine());
             Console.Write("Width : ");
-            re.Width = Double.Parse(Console.ReadLine());
+            re.width = Double.Parse(Console.ReadLine());
         
         }
         //public static double Area(Rectangle re)
@@ -28,8 +28,8 @@ namespace Struct
         public static Calculator GetAreaPerimeter(Rectangle re)
         {
             Calculator ca = new Calculator();
-            ca.Area = re.Height * re.Width;
-            ca.Perimeter = re.Height + re.Width;
+            ca.Area = re.height * re.width;
+            ca.Perimeter = re.height + re.width;
             return ca;
         }
         static void Main(string[] args)
@@ -51,7 +51,7 @@ namespace Struct
     }
     public struct Calculator
     {
-        public double Area;
-        public double Perimeter;
+        public double Area { get; set; }
+        public double Perimeter { get; set; }
     }
 }
