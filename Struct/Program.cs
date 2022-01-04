@@ -15,21 +15,21 @@ namespace Struct
             re.Width = Double.Parse(Console.ReadLine());
         
         }
-        public static double Area(Rectangle re)
-        {
-            return re.Height * re.Width;
-        }
+        //public static double Area(Rectangle re)
+        //{
+        //    return re.Height * re.Width;
+        //}
 
-        public static double Perimeter(Rectangle re)
-        {
-            return re.Height + re.Width;
-        }
+        //public static double Perimeter(Rectangle re)
+        //{
+        //    return re.Height + re.Width;
+        //}
 
         public static Calculator GetAreaPerimeter(Rectangle re)
         {
             Calculator ca = new Calculator();
-            ca.Area = Area(re);
-            ca.Perimeter = Perimeter(re);
+            ca.Area = re.Height * re.Width;
+            ca.Perimeter = re.Height + re.Width;
             return ca;
         }
         static void Main(string[] args)
