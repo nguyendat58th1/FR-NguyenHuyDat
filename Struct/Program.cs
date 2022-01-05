@@ -7,12 +7,12 @@ namespace Struct
         public double width;
         public double height;
 
-        public static void Input(out Rectangle re)
+        public void Input()
         {
             Console.Write("Height :");
-            re.height = Double.Parse(Console.ReadLine());
+            height = Double.Parse(Console.ReadLine());
             Console.Write("Width : ");
-            re.width = Double.Parse(Console.ReadLine());
+            width = Double.Parse(Console.ReadLine());
         
         }
         //public static double Area(Rectangle re)
@@ -42,7 +42,7 @@ namespace Struct
             for(int i =0; i< arrRe.Length;i++)
             {
                 Console.WriteLine($"Input rectangle nunber {i}");
-                Input( out arrRe[i]);
+                arrRe[i].Input();
                 Console.WriteLine($"Area rectangle nunber {i} : {GetAreaPerimeter(arrRe[i]).Area}");
                 Console.WriteLine($"Perimeter rectangle nunber {i} : {GetAreaPerimeter(arrRe[i]).Perimeter}");
                 Console.WriteLine();
