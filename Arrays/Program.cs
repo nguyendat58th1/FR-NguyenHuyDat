@@ -19,13 +19,16 @@ namespace Arrays
             int[] arr2 = new int[n];
             Console.WriteLine();
             Input(arr2);
+            Console.WriteLine("Mảng vừa nhập :");
             Ouput(arr2);
             if(Compare2Arrays(arr, arr2))
                 Console.WriteLine("2 mảng giống nhau");
             else
                 Console.WriteLine("2 mảng khác nhau");
+            Console.WriteLine("Sắp xếp giảm dần :");
             SortGiam(arr2);
             Ouput(arr2);
+            Console.WriteLine("Sắp xếp tăng dần :");
             SortTang(arr2);
             Ouput(arr2);
 
@@ -48,14 +51,16 @@ namespace Arrays
 
         static void SortTang(int[] arr)
         {
-            for (int i = 0; i < arr.Length - 1; i++)
-                for (int j = i + 1; j < arr.Length; j++)
-                    if (arr[i] > arr[j])
-                    {
-                        var temp = arr[i];
-                        arr[i] = arr[j];
-                        arr[j] = temp;
-                    }
+            //for (int i = 0; i < arr.Length - 1; i++)
+            //    for (int j = i + 1; j < arr.Length; j++)
+            //        if (arr[i] > arr[j])
+            //        {
+            //            var temp = arr[i];
+            //            arr[i] = arr[j];
+            //            arr[j] = temp;
+            //        }
+            //solution 2
+            Array.Sort(arr);
         }
 
         static void SortGiam(int[] arr)
