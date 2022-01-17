@@ -29,7 +29,7 @@ namespace LamdaExpressionLINQ
                 new Employee {
                     ID = 13,
                     Name = "Thang",
-                    DoB = new DateTime(1992,4,1)
+                    DoB = new DateTime(1993,4,1)
                 },
                 new Employee {
                     ID = 15,
@@ -49,7 +49,7 @@ namespace LamdaExpressionLINQ
                             new Employee {
                     ID = 32,
                     Name = "Chien",
-                    DoB = new DateTime(1992,4,1)
+                    DoB = new DateTime(1993,4,1)
                 },
             };
             Console.WriteLine("Danh sách nhân viên : ");
@@ -62,7 +62,7 @@ namespace LamdaExpressionLINQ
             Console.WriteLine("Nhân viên có ID trên 10 và tên bắt đầu với 'C' ");
             FindEmployeeHasIDGreaterThan10AndNameStartWithC(lstEmp);
             Console.WriteLine("Nhân viên có năm sinh = 1992 ");
-            FindEmployeeHasYearOfBirthEqual1992(lstEmp);
+            FindFirstEmployeeHasYearOfBirthEqual1992(lstEmp);
 
 
 
@@ -88,12 +88,20 @@ namespace LamdaExpressionLINQ
                 Ouput(i);
             }
         }
-        static void FindEmployeeHasYearOfBirthEqual1992(List<Employee> lstEmp)
+        static void FindFirstEmployeeHasYearOfBirthEqual1992(List<Employee> lstEmp)
         {
-            lstEmp = lstEmp.Where(x => x.DoB.Year ==1992).ToList();
-            foreach (var i in lstEmp)
+            try
             {
-                Ouput(i);
+                var emp = lstEmp.Where(x => x.DoB.Year == 1992).FirstOrDefault();
+                if (emp == null)
+                {
+                    throw new Exception("Không tồn tại ai sinh năm 1992");
+                }
+                Ouput(emp);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }
