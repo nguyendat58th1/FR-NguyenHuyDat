@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOFile", "IOFile\IOFile.csproj", "{D915A8BA-EFA7-4976-BD85-DF839A1699BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateEvent", "DelegateEvent\DelegateEvent.csproj", "{9743A8CF-A153-4DA6-B94A-82E4240B5732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateEvent", "DelegateEvent\DelegateEvent.csproj", "{9743A8CF-A153-4DA6-B94A-82E4240B5732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdaExpressionLINQ", "LamdaExpressionLINQ\LamdaExpressionLINQ.csproj", "{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{9743A8CF-A153-4DA6-B94A-82E4240B5732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9743A8CF-A153-4DA6-B94A-82E4240B5732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9743A8CF-A153-4DA6-B94A-82E4240B5732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{0D3C9CA3-447A-466A-AA9E-6B0E220CDA1C} = {149C6B5F-8C62-4417-81D1-D821EA79E29B}
 		{D915A8BA-EFA7-4976-BD85-DF839A1699BB} = {1242836B-5F50-4CE8-82A9-4C7E946CD3E9}
 		{9743A8CF-A153-4DA6-B94A-82E4240B5732} = {1242836B-5F50-4CE8-82A9-4C7E946CD3E9}
+		{81DE86D2-DB0F-445C-8E1E-53B6B0C3EAB1} = {1242836B-5F50-4CE8-82A9-4C7E946CD3E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {718A1050-12EF-4684-954B-BB049D07B3E4}
